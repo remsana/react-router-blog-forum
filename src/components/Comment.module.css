@@ -1,0 +1,28 @@
+.commentDiv {
+  margin: 0px 20px;
+  border-bottom: 1px solid black;
+}
+
+.commentDiv:last-child {
+    border: none;
+}
+.comment {
+  color: darkblue;
+  text-align: left;
+  margin: 5px;
+}
+
+.commentInfo {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  font-style: italic;
+
+}
+
+.commentName {
+  text-align: left;
+}
+
+.commentEmail {
+  text-align: right;
+}

@@ -2,37 +2,92 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   background-color: rgb(178, 229, 248);
+}
+.header {
+  border-radius: 5px;
+  background-image: url(images/header2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  padding: 0 30px;
+  color: darkblue;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h2 {
+  color: darkblue;
+  text-align: left;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+.postDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px 15px;
+  /* background-color: rgb(1,93,142); */
+  background-color: rgb(44, 47, 73);
 }
 
-.App-link {
-  color: #61dafb;
+.postDiv h4 {
+  padding: 3px 10px;
+}
+.postEven,
+.postOdd {
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  text-align: left;
+  margin: 5px;
+  padding-left: 10px;
+
+  /* height: 100px;
+  width: 200px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postOdd {
+  background-color: rgb(178, 229, 248);
+}
+.postEven {
+  background-color: white;
+}
+
+.postEven:hover,
+.postOdd:hover {
+  background-color: rgb(74, 173, 226);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Comments */
+.titleAndBody {
+  border: 1px solid black;
+  margin: 20px;
+  background-color: rgb(44, 47, 73);
+  color: antiquewhite;
+}
+
+.commentsSection {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+button {
+
+  background-color: rgb(44, 47, 73);
+  color: antiquewhite;
+  font-size: larger;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  
 }
