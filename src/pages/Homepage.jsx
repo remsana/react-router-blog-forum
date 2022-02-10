@@ -2,6 +2,7 @@ import React from "react";
 import Blogs from "../components/Blogs";
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
+import { CircularProgress } from "@material-ui/core";
 
 function Homepage() {
   const [posts, setPosts] = useState([]);
@@ -11,11 +12,13 @@ function Homepage() {
       response.json()).then((json) => setPosts(json))
     ;
   }, []);
-
-  return (
+  
+  return (    
     <div>
+      { posts ? <>
       <Header title={"Your one-stop source for info on various topics!"} />
-      <Blogs posts={posts} />
+      <Blogs posts={posts} /> </> : <CircularProgress />
+    }
     </div>
   );
 }

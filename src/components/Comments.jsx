@@ -1,10 +1,10 @@
 import Comment from "./Comment";
+import Error from "./Error";
 
-function Comments(props) {
-  // console.log(props.comments)
-  console.log(props.post);
+function Comments(props) {    
   return (
-    <div >
+    <>{props.comments.length === 0 ? <Error />:
+    <div>      
       <div className="titleAndBody">
       <h2>{props.post.title}</h2>
       <p>{props.post.body}</p>
@@ -14,8 +14,11 @@ function Comments(props) {
           return <Comment key={i} {...comment} />;
         })}
       </div>
-    </div>
+    </div> 
+  }</>
   );
 }
 
 export default Comments;
+
+
